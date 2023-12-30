@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambience Public School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <section class="sub-header">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./video/video2.mp4" type="video/mp4">
+       </video>
+          <nav>
+            <a href="Home.html"><img src="./img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-tasks" style="color: rgb(255, 255, 255);" onclick="showMenu()"></i>
+
+          </nav>
+        
+          <h1><i class="fa fa-phone-square"></i> CONTACT US</h1> 
+
+      </section>   
+<!---------------------------Location---------------------------------->
+
+        <section class="location">
+            <h3>OUR LOCATION <i class="fa fa-map-marker" aria-hidden="true" style="color: red;"></i>
+            </h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.7059624563326!2d76.06048041050349!3d22.833390123276008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631fba2a81c363%3A0x4382d689009e719d!2sAMBIENCE%20PUBLIC%20SCHOOL!5e1!3m2!1sen!2sin!4v1702449332830!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+<!---------------------------Contact us Content---------------------------------->
+
+       <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home fa-2x"></i>
+                    <span>
+                        <h5>Timarni Rd, Tigriya Goga</h5>
+                        <p>Dewas, Madhya Pradesh 455001</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone fa-2x"></i>
+                    <span>
+                        <h5>9977113376, 9977424967</h5>
+                        <p>Monday to Saturday, 9 AM to 2:30 PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o fa-2x"></i>
+                    <span>
+                        <h5>AmbiencePublicSchool2019@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                   <form action="">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter mail address" required>
+                        <input type="text" placeholder="Enter your subject:" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button type="button" class="hero-btn red-btn">Send Message &nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>
+                        </button>
+                   </form>
+
+
+            </div>
+
+        </div>
+       </section> 
+        
+
+<!--------------Footer------------------->
+
+<section class="footer">
+     <h4>About us</h4>
+     <p>A school is both the educational institution and building designed to provide learning spaces and <br> learning environments for the teaching of students under...</p>
+     <div class="icons">
+        <i class="fa fa-facebook fa-2x"></i>
+        <a href="https://www.instagram.com/ambiencepublicschool_2019/?igsh=YzVkODRmOTdmMw%3D%3D"><i class="fa fa-instagram fa-2x"></i></a>
+        <i class="fa fa-twitter fa-2x"></i>
+        <a href="https://www.youtube.com/@ambiencepublicschool"><i class="fa fa-youtube-play fa-2x"  aria-hidden="true"></i></a>
+     </div>
+     <p>Made with <i class="fa fa-heart-o"></i> by &nbsp;<i class="fa fa-copyright" aria-hidden="true"></i>
+        Akash Singh & Pratik Singh</p>    </section>
+
+    <!------------- JavaScript For Toggle Menu ------------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambience Public School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <section class="sub-header">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./video/video2.mp4" type="video/mp4">
+       </video>
+          <nav>
+            <a href="Home.html"><img src="./img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-tasks" style="color: rgb(255, 255, 255);" onclick="showMenu()"></i>
+          </nav>
+        
+          <h1><i class="fa fa-info-circle"></i> ABOUT US</h1> 
+
+      </section>   
+<!---------------------------About us Content---------------------------------->
+
+         <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>WE ARE A GREAT EDUCATIONAL HUB</h1>
+                    <p>The school prides itself on a faculty par excellence. The teachers are highly qualified and give their best to shape up the students’ life in the finest possible way. There are departments for every subject with departmental heads working with total commitment to bring in the best results. Manning the departments is an adequate number of trained teachers according to the need of the students. Each department under a departmental head holds regular meetings and workshops to contribute quality in the approach and method of education that is imparted to students. The aim in organizing departments is to raise the standard of teaching by discussing and sharing ideas among the departmental members.
+                    </p>
+                    <a href="Home.html" class="hero-btn red-btn">Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="img/img5.jpg" >
+                </div>
+            </div>
+         </section>
+
+
+
+<!--------------Footer------------------->
+
+<section class="footer">
+     <h4>About us</h4>
+     <p>A school is both the educational institution and building designed to provide learning spaces and <br> learning environments for the teaching of students under...</p>
+     <div class="icons">
+        <i class="fa fa-facebook fa-2x"></i>
+        <a href="https://www.instagram.com/ambiencepublicschool_2019/?igsh=YzVkODRmOTdmMw%3D%3D"><i class="fa fa-instagram fa-2x"></i></a>
+        <i class="fa fa-twitter fa-2x"></i>
+        <a href="https://www.youtube.com/@ambiencepublicschool"><i class="fa fa-youtube-play fa-2x"  aria-hidden="true"></i></a>
+     </div>
+     <p>Made with <i class="fa fa-heart-o"></i> by &nbsp;<i class="fa fa-copyright" aria-hidden="true"></i>
+        Akash Singh & Pratik Singh</p>    </section>
+
+    <!------------- JavaScript For Toggle Menu ------------->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
